@@ -1,0 +1,29 @@
+@import 'tailwindcss/base';
+/* Write your own custom base styles here */
+/* Start purging... */
+@import 'tailwindcss/components';
+
+/* Stop purging. */
+@import 'typography';
+@import 'loader';
+html,
+body {
+  scroll-behavior: smooth;
+  background-color: #fff;
+}
+/* Start purging... */
+@import 'tailwindcss/utilities';
+/* Stop purging. */
+/* Your own custom utilities */
+
+.wedding {
+  background-image: url("../../../public/static/images/wedding.png");
+}
+
+.choco {
+  background-color: #251A19;
+}
+  
+.wedding2 {
+  background-image: url("../../../public/static/images/wedding2.png");
+}
