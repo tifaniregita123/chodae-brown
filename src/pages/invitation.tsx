@@ -463,7 +463,7 @@ const Invitation: React.FC = () => {
                         <div className="flex text-[#251A19] ml-6 mt-10 lg:ml-24">
                           <div className="flex-none w-14 h-14">
                             <svg
-                              className="w-14 h-14"
+                              className="w-12 h-12"
                               viewBox="0 0 144 123"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
@@ -486,7 +486,7 @@ const Invitation: React.FC = () => {
                             </svg>
                           </div>
                           <div className="flex-initial w-64 pl-5 lg:pl-16">
-                            <p className="text-2xl">1234567890</p>
+                            <p className="text-xl">1234567890</p>
                             <p className="text-sm">a.n mempelai wanita</p>
                           </div>
                           <div className="flex-initial w-32 pt-2 pl-5">
@@ -512,7 +512,7 @@ const Invitation: React.FC = () => {
                         <div className="flex text-[#251A19] ml-6 mt-10 mb-14 lg:ml-24">
                           <div className="flex-none w-14 h-14">
                             <svg
-                              className="w-14 h-14"
+                              className="w-12 h-12"
                               viewBox="0 0 144 123"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
@@ -535,7 +535,7 @@ const Invitation: React.FC = () => {
                             </svg>
                           </div>
                           <div className="flex-initial w-64 pl-5 lg:pl-16">
-                            <p className="text-2xl">1234567890</p>
+                            <p className="text-xl">1234567890</p>
                             <p className="text-sm">a.n mempelai wanita</p>
                           </div>
                           <div className="flex-initial w-32 pt-2 pl-5">
