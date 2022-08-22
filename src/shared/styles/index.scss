@@ -10,6 +10,7 @@ html,
 body {
   scroll-behavior: smooth;
   background-color: #fff;
+  overflow-x:hidden;
 }
 /* Start purging... */
 @import 'tailwindcss/utilities';
@@ -26,4 +27,7 @@ body {
   
 .wedding2 {
   background-image: url("../../../public/static/images/wedding2.png");
+}
+.aos-init:not(.aos-animate):after {
+  position: fixed;
 }

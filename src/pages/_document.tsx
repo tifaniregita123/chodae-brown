@@ -27,6 +27,7 @@ export default class Documents extends Document {
     return (
       <Html>
         <Head>
+          <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
@@ -52,6 +53,8 @@ export default class Documents extends Document {
         <body>
           <Main />
           <NextScript />
+          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+          <script>AOS.init();</script>
         </body>
       </Html>
     )

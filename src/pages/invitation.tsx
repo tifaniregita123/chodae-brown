@@ -9,17 +9,39 @@ const Invitation: React.FC = () => {
   const [showModal, setShowModal] = useState(false)
   return (
     <>
-      <div className="choco">
+      <div className="left-0 right-0 choco">
         <div className="relative flex flex-col items-center pt-64 my-auto mt-0 bg-black bg-opacity-50 bg-center bg-cover md:flex wedding bg-blend-darken">
           <div className="justify-center max-w-lg sm:text-left place-content-center">
-            <p className="pt-40 space-y-1 text-2xl text-center text-orange-200 text-9x">The Wedding Of</p>
-            <h1 className="mb-5 text-6xl text-center text-orange-200 lg:text-9xl lg:-mx-20 ">Wanita & Pria</h1>
-            <p className="pt-5 pb-64 space-y-1 text-2xl text-center text-orange-200 ">20 Juli 2022</p>
+            <p
+              className="pt-40 space-y-1 text-2xl text-center text-orange-200 text-9x"
+              data-aos="slide-right"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
+              The Wedding Of
+            </p>
+            <h1
+              className="mb-5 text-6xl text-center text-orange-200 lg:text-9xl lg:-mx-20 "
+              data-aos="fade-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
+              Wanita & Pria
+            </h1>
+            <p
+              className="pt-5 pb-64 space-y-1 text-2xl text-center text-orange-200 "
+              data-aos="slide-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
+              20 Juli 2022
+            </p>
           </div>
           <div className="w-full pb-10 h-36 bg-gradient-to-b from-transparent to-[#251A19]"></div>
         </div>
 
-        <div className="flex flex-col px-5 pt-20 overflow-hidden place-content-center choco ">
+        <div
+          className="flex flex-col px-5 pt-20 overflow-hidden place-content-center choco "
+          data-aos="fade-up"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000">
           <p className="text-sm text-center text-orange-200 mt-30 lg:text-2xl lg:pt-20">
             Assalamu’alaikum Warahmatullahi Wabarakatuh
           </p>
@@ -36,6 +58,9 @@ const Invitation: React.FC = () => {
               layout="fill"
               alt=""
               objectFit="inherit"
+              data-aos="fade-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2500"
             />
           </div>
           <div className="z-20 flex flex-col px-5 pb-5 -mt-20 overflow-hidden place-content-center">
@@ -47,10 +72,27 @@ const Invitation: React.FC = () => {
             <p className="mx-5 mb-3 text-xl text-center text-orange-200 border-b-2 border-orange-200 lg:mx-96 lg:pb-5 lg:text-4xl my-7">
               Mempelai Wanita, S.Pd
             </p>
-            <p className="text-xs text-center text-orange-200 lg:mt-10 lg:text-lg">Putri dari</p>
-            <p className="text-xs text-center text-orange-200 lg:text-lg">Bapak Mempelai & Ibu Mempelai</p>
+            <p
+              className="text-xs text-center text-orange-200 lg:mt-10 lg:text-lg"
+              data-aos="fade-right"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000">
+              Putri dari
+            </p>
+            <p
+              className="text-xs text-center text-orange-200 lg:text-lg"
+              data-aos="fade-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000">
+              Bapak Mempelai & Ibu Mempelai
+            </p>
 
-            <a href="https://instagram.com/" className="grid mx-auto place-items-center">
+            <a
+              href="https://instagram.com/"
+              className="grid mx-auto place-items-center"
+              data-aos="fade-down"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000">
               <svg
                 className="w-10 h-10 text-orange-200 fill-current stroke-0 lg:w-20 lg:h-20 mt-7 stroke-orange-200 "
                 fill="none"
@@ -66,7 +108,13 @@ const Invitation: React.FC = () => {
               </svg>
             </a>
 
-            <h1 className="pt-6 mx-5 text-4xl text-center text-orange-200 lg:text-6xl lg:m-7">&</h1>
+            <h1
+              className="pt-6 mx-5 text-4xl text-center text-orange-200 lg:text-6xl lg:m-7"
+              data-aos="fade-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000">
+              &
+            </h1>
             {/* frame */}
             <div className="relative grid mt-5 place-items-center">
               <div className="text-orange-200 bg-orange-200 rounded-t-full w-36 h-52 lg:w-80 lg:h-96"> </div>
@@ -75,10 +123,27 @@ const Invitation: React.FC = () => {
             <p className="mx-5 my-10 mb-3 text-xl text-center text-orange-200 border-b-2 border-orange-200 lg:mx-96 lg:pb-5 lg:text-4xl">
               Mempelai Pria, S.Pd
             </p>
-            <p className="text-xs text-center text-orange-200 lg:mt-10 lg:text-lg">Putra dari</p>
-            <p className="text-xs text-center text-orange-200 lg:text-lg">Bapak Mempelai & Ibu Mempelai</p>
+            <p
+              className="text-xs text-center text-orange-200 lg:mt-10 lg:text-lg"
+              data-aos="fade-right"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000">
+              Putra dari
+            </p>
+            <p
+              className="text-xs text-center text-orange-200 lg:text-lg"
+              data-aos="fade-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000">
+              Bapak Mempelai & Ibu Mempelai
+            </p>
 
-            <a href="https://instagram.com/" className="grid mx-auto place-items-center">
+            <a
+              href="https://instagram.com/"
+              className="grid mx-auto place-items-center"
+              data-aos="fade-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000">
               <svg
                 className="w-10 h-10 text-orange-200 fill-current stroke-0 mt-7 stroke-orange-200 lg:w-20 lg:h-20"
                 fill="none"
@@ -100,29 +165,35 @@ const Invitation: React.FC = () => {
             Merupakan suatu kehormatan dan kebahagiaan bagi kami,apabila Bapak/Ibu/Saudara/i berkenan hadir untuk doa restu
             kepada mempelai :
           </p>
-          <p className="py-4 mt-4 text-xl text-center text-orange-200 lg:text-4xl lg:m-10">Save The Date</p>
+          <p
+            className="py-4 mt-4 text-xl text-center text-orange-200 lg:text-4xl lg:m-10"
+            data-aos="fade-down"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000">
+            Save The Date
+          </p>
 
           {/* Hitung mundur */}
           <div className="grid grid-flow-col grid-cols-4 gap-4 py-4 mt-1 text-center text-orange-200 lg:px-96">
-            <div>
+            <div data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
               <span className="text-2xl lg:text-4xl ">15</span>
               <div className="grid grid-flow-col gap-4 ">
                 <span className="text-base lg:text-2xl lg:m-7">D</span>
               </div>
             </div>
-            <div>
+            <div data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
               <span className="text-2xl lg:text-4xl ">23</span>
               <div className="grid grid-flow-col gap-4 ">
                 <span className="text-base lg:text-2xl lg:m-7">H</span>
               </div>
             </div>
-            <div>
+            <div data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
               <span className="text-2xl lg:text-4xl ">52</span>
               <div className="grid grid-flow-col gap-4 ">
                 <span className="text-base lg:text-2xl lg:m-7">M</span>
               </div>
             </div>
-            <div>
+            <div data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
               <span className="text-2xl lg:text-4xl">30</span>
               <div className="grid grid-flow-colgap-4 ">
                 <span className="text-base lg:text-2xl lg:m-7">S</span>
@@ -136,43 +207,69 @@ const Invitation: React.FC = () => {
           <div className="z-50 flex flex-col px-5 overflow-hidden place-content-center">
             {/* Akad */}
             <div className="grid text-center text-orange-200 border-2 border-orange-200 rounded-md lg:mx-60 lg:p-40 place-items-center p-7 ">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-4 h-4 stroke-orange-200 icon icon-tabler lg:w-12 lg:h-12 icon-tabler-diamond"
-                width="44"
-                height="44"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                fill="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M6 5h12l3 5l-8.5 9.5a0.7 .7 0 0 1 -1 0l-8.5 -9.5l3 -5" />
-                <path d="M10 12l-2 -2.2l.6 -1" />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="stroke-orange-200 w-8 h-8 icon icon-tabler icon-tabler-circle lg:w-24 lg:h-24   lg:-translate-y-[20px] -translate-y-[9px]"
-                width="44"
-                height="44"
-                viewBox="0 0 24 24"
-                stroke-width="1"
-                stroke="currentColor"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <circle cx="12" cy="12" r="9" />
-              </svg>
+              <div
+                className="flex flex-col items-center"
+                data-aos="fade-down"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-4 h-4 stroke-orange-200 icon icon-tabler lg:w-12 lg:h-12 icon-tabler-diamond"
+                  width="44"
+                  height="44"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M6 5h12l3 5l-8.5 9.5a0.7 .7 0 0 1 -1 0l-8.5 -9.5l3 -5" />
+                  <path d="M10 12l-2 -2.2l.6 -1" />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="stroke-orange-200 w-8 h-8 icon icon-tabler icon-tabler-circle lg:w-24 lg:h-24   lg:-translate-y-[20px] -translate-y-[9px]"
+                  width="44"
+                  height="44"
+                  viewBox="0 0 24 24"
+                  stroke-width="1"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <circle cx="12" cy="12" r="9" />
+                </svg>
+              </div>
               <span className="m-4 text-2xl lg:text-5xl lg:m-9">Akad</span>
-              <span className="mb-4 text-base lg:text-xl">Wednesday, 20 July 2022</span>
-              <span className="mb-4 text-sm lg:text-xl">08.00 - 10.00 WIB</span>
-              <span className="pt-5 mb-4 text-xs border-t-0 border-orange-200 lg:text-lg lg:m-9">
+              <span
+                className="mb-4 text-base lg:text-xl"
+                data-aos="fade-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000">
+                Wednesday, 20 July 2022
+              </span>
+              <span
+                className="mb-4 text-sm lg:text-xl"
+                data-aos="fade-right"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000">
+                08.00 - 10.00 WIB
+              </span>
+              <span
+                className="pt-5 mb-4 text-xs border-t-0 border-orange-200 lg:text-lg lg:m-9"
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000">
                 Jl. R.A. Kartini No.28, Regol Wetan, Kec. Sumedang Sel.,Kabupaten Sumedang, Jawa Barat 45311
               </span>
               <a href="https://g.page/sawala-space?share">
-                <button className="flex px-3 items-center w-fit content-center stroke-[#251A19] !mt-3 space-x-3 border-2 border-orange-200 rounded-lg hover:bg-[#251A19] hover:text-orange-200 hover:font-normal font-semibold bg-yellow-200 text-[#251A19]">
+                <button
+                  className="flex px-3 items-center w-fit content-center stroke-[#251A19] !mt-3 space-x-3 border-2 border-orange-200 rounded-lg hover:bg-[#251A19] hover:text-orange-200 hover:font-normal font-semibold bg-yellow-200 text-[#251A19]"
+                  data-aos="fade-up"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="1000">
                   <svg
                     className="w-4 h-4 lg:w-7 lg:h-7"
                     fill="none"
@@ -192,24 +289,46 @@ const Invitation: React.FC = () => {
 
             {/* Resepsi */}
             <div className="grid mt-40 text-center text-orange-200 -translate-y-32 border-2 border-orange-200 rounded-md lg:mt-54 lg:rounded-lg lg:p-40 lg:mx-60 place-items-center p-7 ">
-              <svg
-                className="w-9 h-9 lg:w-24 lg:h-24"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fill-rule="evenodd"
-                  d="M6 3a1 1 0 011-1h.01a1 1 0 010 2H7a1 1 0 01-1-1zm2 3a1 1 0 00-2 0v1a2 2 0 00-2 2v1a2 2 0 00-2 2v.683a3.7 3.7 0 011.055.485 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0A3.7 3.7 0 0118 12.683V12a2 2 0 00-2-2V9a2 2 0 00-2-2V6a1 1 0 10-2 0v1h-1V6a1 1 0 10-2 0v1H8V6zm10 8.868a3.704 3.704 0 01-4.055-.036 1.704 1.704 0 00-1.89 0 3.704 3.704 0 01-4.11 0 1.704 1.704 0 00-1.89 0A3.704 3.704 0 012 14.868V17a1 1 0 001 1h14a1 1 0 001-1v-2.132zM9 3a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1zm3 0a1 1 0 011-1h.01a1 1 0 110 2H13a1 1 0 01-1-1z"
-                  clip-rule="evenodd"></path>
-              </svg>
+              <div data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <svg
+                  className="w-9 h-9 lg:w-24 lg:h-24"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    d="M6 3a1 1 0 011-1h.01a1 1 0 010 2H7a1 1 0 01-1-1zm2 3a1 1 0 00-2 0v1a2 2 0 00-2 2v1a2 2 0 00-2 2v.683a3.7 3.7 0 011.055.485 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0A3.7 3.7 0 0118 12.683V12a2 2 0 00-2-2V9a2 2 0 00-2-2V6a1 1 0 10-2 0v1h-1V6a1 1 0 10-2 0v1H8V6zm10 8.868a3.704 3.704 0 01-4.055-.036 1.704 1.704 0 00-1.89 0 3.704 3.704 0 01-4.11 0 1.704 1.704 0 00-1.89 0A3.704 3.704 0 012 14.868V17a1 1 0 001 1h14a1 1 0 001-1v-2.132zM9 3a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1zm3 0a1 1 0 011-1h.01a1 1 0 110 2H13a1 1 0 01-1-1z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </div>
               <span className="m-4 text-2xl lg:text-5xl lg:m-9">Resepsi</span>
-              <span className="mb-4 text-base lg:text-xl">Wednesday, 20 July 2022</span>
-              <span className="mb-4 text-sm lg:text-xl">08.00 - 10.00 WIB</span>
-              <span className="pt-5 mb-4 text-xs border-t-0 border-orange-200 lg:text-lg lg:mt-9">
+              <span
+                className="mb-4 text-base lg:text-xl"
+                data-aos="fade-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000">
+                Wednesday, 20 July 2022
+              </span>
+              <span
+                className="mb-4 text-sm lg:text-xl"
+                data-aos="fade-right"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000">
+                08.00 - 10.00 WIB
+              </span>
+              <span
+                className="pt-5 mb-4 text-xs border-t-0 border-orange-200 lg:text-lg lg:mt-9"
+                data-aos="fade"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000">
                 Jl. R.A. Kartini No.28, Regol Wetan, Kec. Sumedang Sel.,Kabupaten Sumedang, Jawa Barat 45311
               </span>
               <a href="https://g.page/sawala-space?share">
-                <button className="flex px-3 items-center w-fit content-center stroke-[#251A19] !mt-3 space-x-3 border-2 border-orange-200 rounded-lg hover:bg-[#251A19] hover:text-orange-200 hover:font-normal font-semibold bg-yellow-200 text-[#251A19]">
+                <button
+                  className="flex px-3 items-center w-fit content-center stroke-[#251A19] !mt-3 space-x-3 border-2 border-orange-200 rounded-lg hover:bg-[#251A19] hover:text-orange-200 hover:font-normal font-semibold bg-yellow-200 text-[#251A19]"
+                  data-aos="fade-up"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="1000">
                   <svg
                     className="w-4 h-4 lg:w-7 lg:h-7"
                     fill="none"
@@ -229,8 +348,18 @@ const Invitation: React.FC = () => {
           </div>
         </div>
         <div className="grid -mt-32 text-center text-orange-200 place-items-center p-7 ">
-          <span className="m-4 text-2xl lg:text-4xl lg:pt-20">Live Streaming</span>
-          <span className="mb-4 text-xs lg:text-lg lg:p-10">
+          <span
+            className="m-4 text-2xl lg:text-4xl lg:pt-20"
+            data-aos="slide-down"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="500">
+            Live Streaming
+          </span>
+          <span
+            className="mb-4 text-xs lg:text-lg lg:p-10"
+            data-aos="fade"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="500">
             Kami juga berencana untuk mempublikasikan pernikahan kami secara virtual live instagram/youtube yang bisa anda
             ikuti melalui link berikut :
           </span>
@@ -255,13 +384,21 @@ const Invitation: React.FC = () => {
         <div className="relative flex flex-col overflow-hidden">
           <div className="z-50 grid text-center text-orange-200 p-7">
             <span className="mt-16 mb-4 text-2xl lg:text-4xl">Love Story</span>
-            <span className="mb-4 text-xs lg:text-lg lg:pt-7">
+            <span
+              className="mb-4 text-xs lg:text-lg lg:pt-7"
+              data-aos="fade"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1500">
               Marriage is the golden ring in a chain whose beginning is a glance and whose ending is eternity
             </span>
           </div>
           <Image src={flower} className="absolute z-10 overflow-visible top-10 " layout="fill" alt="" objectFit="inherit" />
           <div className="z-50 flex flex-col overflow-hidden px-7 lg:mx-96 ">
-            <div className="grid text-orange-200 rounded-md place-items-center bg-zinc-700 p-7 lg:my-5 l lg:p-20">
+            <div
+              className="grid text-orange-200 rounded-md place-items-center bg-zinc-700 p-7 lg:my-5 l lg:p-20"
+              data-aos="flip-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000">
               <span className="mt-8 text-xs text-center lg:text-lg lg:m-20">Gambar</span>
               <div className="grid object-left">
                 <span className="mt-8 text-base text-left lg:text-xl">First Meet</span>
@@ -270,7 +407,11 @@ const Invitation: React.FC = () => {
                 </span>
               </div>
             </div>
-            <div className="grid mt-4 text-orange-200 rounded-md place-items-center bg-zinc-700 p-7 lg:my-5 lg:p-20">
+            <div
+              className="grid mt-4 text-orange-200 rounded-md place-items-center bg-zinc-700 p-7 lg:my-5 lg:p-20"
+              data-aos="flip-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000">
               <span className="mt-8 text-xs text-center lg:text-lg lg:m-20">Gambar</span>
               <div className="grid object-left">
                 <span className="mt-8 text-base text-left lg:text-xl">Relationship</span>
@@ -279,7 +420,11 @@ const Invitation: React.FC = () => {
                 </span>
               </div>
             </div>
-            <div className="grid mt-4 text-orange-200 rounded-md place-items-center bg-zinc-700 p-7 lg:my-5 lg:p-20">
+            <div
+              className="grid mt-4 text-orange-200 rounded-md place-items-center bg-zinc-700 p-7 lg:my-5 lg:p-20"
+              data-aos="flip-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000">
               <span className="mt-8 text-xs text-center lg:text-lg lg:m-20">Gambar</span>
               <div className="grid object-left">
                 <span className="mt-8 text-base text-left lg:text-xl">Engangement</span>
@@ -295,7 +440,7 @@ const Invitation: React.FC = () => {
           <span className="mt-16 mb-4 text-2xl lg:text-5xl lg:mt-32">Ucapan & Do'a</span>
           <span className="mb-4 text-xs lg:text-lg lg:py-10">Kirimkan do’a & ucapan kepada kedua mempelai</span>
         </div>
-        <div tw="mx-7 justify-center">
+        <div tw="mx-7 justify-center" data-aos="fade" data-aos-easing="ease-out-cubic" data-aos-duration="800">
           <div className="flex flex-col max-w-lg p-5 mx-auto rounded-md shadow-md lg:p-8 boder border-slate-100 bg-slate-200 -translate-y-60">
             <form action="" className="">
               <input
@@ -330,10 +475,10 @@ const Invitation: React.FC = () => {
               </div>
             </form>
             <div className="h-24 overflow-y-auto lg:h-32 mt-7">
-              <div className="grid object-right grid-flow-col grid-rows-2 gap-1">
+              <div className="grid grid-flow-col grid-rows-2 gap-1 origin-left">
                 <div className="row-span-3 ">
                   <svg
-                    className="w-6 h-6 lg:w-10 lg:h-10"
+                    className="w-6 h-6 ml-0 lg:w-10 lg:h-10"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -404,7 +549,11 @@ const Invitation: React.FC = () => {
           <div className="z-50 flex flex-col w-screen mb-5 overflow-hidden">
             <div className="grid p-3 px-12 text-center text-orange-200 place-items-center font-mulish">
               <span className="text-2xl lg:text-5xl lg:pt-20">Kirim Hadiah</span>
-              <span className="mt-4 mb-4 text-xs lg:text-lg lg:m-10">
+              <span
+                className="mt-4 mb-4 text-xs lg:text-lg lg:m-10"
+                data-aos="fade"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="500">
                 Bagi yang ingin memberikan tanda kasih, dapat mengirimkan melalui fitur dibawah ini :
               </span>
 
@@ -431,7 +580,7 @@ const Invitation: React.FC = () => {
 
               {/* Modal PopUp */}
               {showModal ? (
-                <div id="modal">
+                <div>
                   <div className="fixed inset-0 z-20 overflow-y-auto bg-gray-500 bg-opacity-40 ">
                     <div className="flex items-center justify-center min-h-screen px-4 text-center md:items-center">
                       <div className="fixed "></div>
@@ -486,12 +635,14 @@ const Invitation: React.FC = () => {
                             </svg>
                           </div>
                           <div className="flex-initial w-64 pl-5 lg:pl-16">
-                            <p className="text-xl">1234567890</p>
+                            <input disabled className="text-xl" id="copy" value="1234567890">
+                              1234567890
+                            </input>
                             <p className="text-sm">a.n mempelai wanita</p>
                           </div>
                           <div className="flex-initial w-32 pt-2 pl-5">
                             <a>
-                              <button>
+                              <button data-clipboard-target="#copy">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   className="w-7 h-7"
@@ -564,37 +715,79 @@ const Invitation: React.FC = () => {
                 </div>
               ) : null}
 
-              <span className="mt-10 text-xs lg:text-base lg:px-60">
+              <span
+                className="mt-10 text-xs lg:text-base lg:px-60"
+                data-aos="zoom-in"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="500">
                 "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu
                 sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan
                 sayang.”
               </span>
-              <p className="mt-4 text-sm">Q.S. Ar Rum : 21</p>
+              <p className="mt-4 text-sm" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500">
+                Q.S. Ar Rum : 21
+              </p>
             </div>
             <div className="grid text-center place-items-center font-mulish">
               <span className="text-2xl text-orange-200 mt-9 lg:text-5xl lg:mt-20">Gallery</span>
               <div className="grid grid-flow-col grid-cols-2 gap-4 py-4 mt-1 lg:gap-16 ">
                 <div>
-                  <div className="border-orange-200 border-[20px] rounded-xl lg:mb-10 w-44 h-32 my-4 lg:w-96 lg:h-72"> </div>
-                  <div className="grid grid-flow-col grid-rows-4 gap-4 lg:my-5 border-orange-200 border-[20px] rounded-xl w-44 h-32 my-4 lg:w-96 lg:h-72">
+                  <div
+                    className="border-orange-200 border-[20px] rounded-xl lg:mb-10 w-44 h-32 my-4 lg:w-96 lg:h-72"
+                    data-aos="flip-right"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="800">
                     {' '}
                   </div>
-                  <div className="grid grid-flow-col grid-rows-4 gap-4 lg:my-10  border-orange-200 border-[20px] rounded-xl w-44 h-32 my-4 lg:w-96 lg:h-72">
+                  <div
+                    className="grid grid-flow-col grid-rows-4 gap-4 lg:my-5 border-orange-200 border-[20px] rounded-xl w-44 h-32 my-4 lg:w-96 lg:h-72"
+                    data-aos="flip-right"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="800">
                     {' '}
                   </div>
-                  <div className="grid grid-flow-col grid-rows-4 gap-4 border-orange-200 border-[20px] rounded-xl w-44 h-32 my-4 lg:w-96 lg:h-72">
+                  <div
+                    className="grid grid-flow-col grid-rows-4 gap-4 lg:my-10  border-orange-200 border-[20px] rounded-xl w-44 h-32 my-4 lg:w-96 lg:h-72"
+                    data-aos="flip-right"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="800">
+                    {' '}
+                  </div>
+                  <div
+                    className="grid grid-flow-col grid-rows-4 gap-4 border-orange-200 border-[20px] rounded-xl w-44 h-32 my-4 lg:w-96 lg:h-72"
+                    data-aos="flip-right"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="800">
                     {' '}
                   </div>
                 </div>
                 <div>
-                  <div className="border-orange-200 border-[20px] rounded-xl lg:mb-10 w-44 h-32 my-4 lg:w-96 lg:h-72"> </div>
-                  <div className="grid grid-flow-col grid-rows-4 gap-4 border-orange-200 border-[20px] rounded-xl w-44 h-32 my-4 lg:w-96 lg:h-72">
+                  <div
+                    className="border-orange-200 border-[20px] rounded-xl lg:mb-10 w-44 h-32 my-4 lg:w-96 lg:h-72"
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="800">
                     {' '}
                   </div>
-                  <div className="grid grid-flow-col grid-rows-4 gap-4 lg:my-10 border-orange-200 border-[20px] rounded-xl w-44 h-32 my-4 lg:w-96 lg:h-72">
+                  <div
+                    className="grid grid-flow-col grid-rows-4 gap-4 border-orange-200 border-[20px] rounded-xl w-44 h-32 my-4 lg:w-96 lg:h-72"
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="800">
                     {' '}
                   </div>
-                  <div className="grid grid-flow-col grid-rows-4 gap-4 border-orange-200 border-[20px] rounded-xl w-44 h-32 my-4 lg:w-96 lg:h-72">
+                  <div
+                    className="grid grid-flow-col grid-rows-4 gap-4 lg:my-10 border-orange-200 border-[20px] rounded-xl w-44 h-32 my-4 lg:w-96 lg:h-72"
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="800">
+                    {' '}
+                  </div>
+                  <div
+                    className="grid grid-flow-col grid-rows-4 gap-4 border-orange-200 border-[20px] rounded-xl w-44 h-32 my-4 lg:w-96 lg:h-72"
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="800">
                     {' '}
                   </div>
                 </div>
@@ -604,28 +797,50 @@ const Invitation: React.FC = () => {
         </div>
         <div className="relative flex flex-col items-center mt-0 bg-black bg-opacity-50 bg-top bg-no-repeat bg-cover wedding2 bg-blend-darken -top-56">
           <div className="z-20 justify-center place-content-center lg:w-auto lg:h-screen lg:pt-72">
-            <p className="mt-16 space-y-1 text-2xl text-center text-orange-200 lg:text-4xl">The Wedding Of</p>
-            <h1 className="pt-5 mx-5 mb-5 text-6xl text-center text-orange-200 lg:text-9xl">Wanita & Pria</h1>
-            <p className="pt-5 mb-16 space-y-1 text-2xl text-center text-orange-200 lg:text-4xl">20 Juli 2022</p>
+            <p
+              className="mt-16 space-y-1 text-2xl text-center text-orange-200 lg:text-4xl"
+              data-aos="slide-right"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
+              The Wedding Of
+            </p>
+            <h1
+              className="pt-5 mx-5 mb-5 text-6xl text-center text-orange-200 lg:text-9xl"
+              data-aos="fade-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
+              Wanita & Pria
+            </h1>
+            <p
+              className="pt-5 mb-16 space-y-1 text-2xl text-center text-orange-200 lg:text-4xl"
+              data-aos="slide-left"
+              data-aos-easing="linear"
+              data-aos-duration="2000">
+              20 Juli 2022
+            </p>
           </div>
         </div>
 
-        <div className="relative grid justify-center place-content-center -top-36">
-          <p className="mb-8 text-lg text-center text-slate-200">CREATED WITH LOVE BY</p>
+        <div
+          className="relative grid justify-center place-content-center"
+          data-aos="fade"
+          data-aos-easing="linear"
+          data-aos-duration="500">
+          <p className="mb-8 text-sm text-center text-slate-200">CREATED WITH LOVE BY</p>
           <span className="h-auto w-44">
-            <Image src={logo} className="absolute w-auto mx-auto overflow-visible p-auto" alt="" />
+            <Image src={logo} className="absolute w-auto mx-auto overflow-visible p-auto h-44" alt="" />
           </span>
         </div>
-        <div className="grid -mt-10 -translate-y-20 place-content-center">
+        <div className="grid pt-3 pb-0 place-content-center">
           <div className="flex">
             <svg
-              className="fill-current w-7 h-7 lg:w-10 lg:h-10 text-slate-200"
+              className="w-6 h-6 fill-current lg:w-10 lg:h-10 text-slate-200"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512">
               <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path>
             </svg>
             <svg
-              className="w-10 h-10 lg:w-12 lg:h-12 fill-current stroke-0 mt-7 text-slate-200 -translate-y-[34px]"
+              className="w-9 h-9 lg:w-12 lg:h-12 fill-current stroke-0 mt-7 text-slate-200 -translate-y-[34px]"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -639,7 +854,7 @@ const Invitation: React.FC = () => {
             </svg>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-7 w-7 lg:w-10 lg:h-10 text-slate-200"
+              className="w-6 h-6 lg:w-10 lg:h-10 text-slate-200"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
