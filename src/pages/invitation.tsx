@@ -1,5 +1,6 @@
+import { Dialog, Transition } from '@headlessui/react'
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React, { Fragment, useState } from 'react'
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const flower = require('@/../../public/static/images/BG-01.png') as string
@@ -7,6 +8,13 @@ const flower = require('@/../../public/static/images/BG-01.png') as string
 const logo = require('@/../../public/static/images/logo.png') as string
 const Invitation: React.FC = () => {
   const [showModal, setShowModal] = useState(false)
+
+  function closeModal() {
+    setShowModal(false)
+  }
+  function openModal() {
+    setShowModal(true)
+  }
   return (
     <>
       <div className="left-0 right-0 choco">
@@ -27,7 +35,7 @@ const Invitation: React.FC = () => {
               Wanita & Pria
             </h1>
             <p
-              className="pt-5 pb-64 space-y-1 text-2xl text-center text-orange-200 "
+              className="pt-5 pb-64 space-y-1 text-2xl text-center text-orange-200"
               data-aos="slide-left"
               data-aos-easing="ease-out-cubic"
               data-aos-duration="2000">
@@ -38,7 +46,7 @@ const Invitation: React.FC = () => {
         </div>
 
         <div
-          className="flex flex-col px-5 pt-20 overflow-hidden place-content-center choco "
+          className="flex flex-col px-5 pt-16 overflow-hidden place-content-center choco "
           data-aos="fade-up"
           data-aos-easing="ease-out-cubic"
           data-aos-duration="1000">
@@ -204,7 +212,7 @@ const Invitation: React.FC = () => {
 
         <div className="relative flex flex-col overflow-hidden ">
           <Image src={flower} className="absolute z-10 overflow-visible top-10 " layout="fill" alt="" objectFit="inherit" />
-          <div className="z-50 flex flex-col px-5 overflow-hidden place-content-center">
+          <div className="z-50 flex flex-col px-5 my-auto overflow-hidden just">
             {/* Akad */}
             <div className="grid text-center text-orange-200 border-2 border-orange-200 rounded-md lg:mx-60 lg:p-40 place-items-center p-7 ">
               <div
@@ -218,11 +226,11 @@ const Invitation: React.FC = () => {
                   width="44"
                   height="44"
                   viewBox="0 0 24 24"
-                  stroke-width="1.5"
+                  strokeWidth="1.5"
                   stroke="currentColor"
                   fill="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round">
+                  strokeLinecap="round"
+                  strokeLinejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                   <path d="M6 5h12l3 5l-8.5 9.5a0.7 .7 0 0 1 -1 0l-8.5 -9.5l3 -5" />
                   <path d="M10 12l-2 -2.2l.6 -1" />
@@ -233,11 +241,11 @@ const Invitation: React.FC = () => {
                   width="44"
                   height="44"
                   viewBox="0 0 24 24"
-                  stroke-width="1"
+                  strokeWidth="1"
                   stroke="currentColor"
                   fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round">
+                  strokeLinecap="round"
+                  strokeLinejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                   <circle cx="12" cy="12" r="9" />
                 </svg>
@@ -277,9 +285,9 @@ const Invitation: React.FC = () => {
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
                   </svg>
                   <span className="text-xs lg:text-base">Map Location</span>
@@ -296,9 +304,9 @@ const Invitation: React.FC = () => {
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M6 3a1 1 0 011-1h.01a1 1 0 010 2H7a1 1 0 01-1-1zm2 3a1 1 0 00-2 0v1a2 2 0 00-2 2v1a2 2 0 00-2 2v.683a3.7 3.7 0 011.055.485 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0A3.7 3.7 0 0118 12.683V12a2 2 0 00-2-2V9a2 2 0 00-2-2V6a1 1 0 10-2 0v1h-1V6a1 1 0 10-2 0v1H8V6zm10 8.868a3.704 3.704 0 01-4.055-.036 1.704 1.704 0 00-1.89 0 3.704 3.704 0 01-4.11 0 1.704 1.704 0 00-1.89 0A3.704 3.704 0 012 14.868V17a1 1 0 001 1h14a1 1 0 001-1v-2.132zM9 3a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1zm3 0a1 1 0 011-1h.01a1 1 0 110 2H13a1 1 0 01-1-1z"
-                    clip-rule="evenodd"></path>
+                    clipRule="evenodd"></path>
                 </svg>
               </div>
               <span className="m-4 text-2xl lg:text-5xl lg:m-9">Resepsi</span>
@@ -336,9 +344,9 @@ const Invitation: React.FC = () => {
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
                   </svg>
                   <span className="text-xs lg:text-base">Map Location</span>
@@ -347,7 +355,7 @@ const Invitation: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="grid -mt-32 text-center text-orange-200 place-items-center p-7 ">
+        <div className="grid -mt-32 text-center text-orange-200 place-items-center p-7">
           <span
             className="m-4 text-2xl lg:text-4xl lg:pt-20"
             data-aos="slide-down"
@@ -369,11 +377,11 @@ const Invitation: React.FC = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-4 h-4 lg:w-5 lg:h-5 icon icon-tabler icon-tabler-player-play"
                 viewBox="0 0 24 24"
-                stroke-width="1.5"
+                strokeWidth="1.5"
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round">
+                strokeLinecap="round"
+                strokeLinejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path d="M7 4v16l13 -8z" />
               </svg>
@@ -381,7 +389,7 @@ const Invitation: React.FC = () => {
             </button>
           </a>
         </div>
-        <div className="relative flex flex-col overflow-hidden">
+        <div className="relative flex flex-col -mt-20 overflow-hidden">
           <div className="z-50 grid text-center text-orange-200 p-7">
             <span className="mt-16 mb-4 text-2xl lg:text-4xl">Love Story</span>
             <span
@@ -436,12 +444,12 @@ const Invitation: React.FC = () => {
           </div>
         </div>
         {/* Card Ucapan */}
-        <div className="grid mt-40 text-center text-orange-200 -translate-y-52 place-items-center p-7">
+        <div className="grid text-center text-orange-200 -mt-14 place-items-center p-7">
           <span className="mt-16 mb-4 text-2xl lg:text-5xl lg:mt-32">Ucapan & Do'a</span>
           <span className="mb-4 text-xs lg:text-lg lg:py-10">Kirimkan do’a & ucapan kepada kedua mempelai</span>
         </div>
         <div tw="mx-7 justify-center" data-aos="fade" data-aos-easing="ease-out-cubic" data-aos-duration="800">
-          <div className="flex flex-col max-w-lg p-5 mx-auto rounded-md shadow-md lg:p-8 boder border-slate-100 bg-slate-200 -translate-y-60">
+          <div className="flex flex-col max-w-lg p-5 mx-auto rounded-md shadow-md lg:p-8 boder border-slate-100 bg-slate-200">
             <form action="" className="">
               <input
                 type="text"
@@ -458,12 +466,18 @@ const Invitation: React.FC = () => {
                 <select
                   className="block w-full px-3 py-2 my-5 text-sm border shadow lg:text-lg fokus:outline-none focus:ring-1 text-slate-400 focus:border-sky-500"
                   id="grid-state">
-                  <option className="text-slate-600" disabled selected>
+                  <option defaultValue={'Konfirmasi Kehadiran'} className="text-slate-600" disabled selected>
                     Konfirmasi Kehadiran
                   </option>
-                  <option className="text-slate-600">Hadir</option>
-                  <option className="text-slate-600">Mungkin</option>
-                  <option className="text-slate-600">Tidak Hadir</option>
+                  <option value={1} className="text-slate-600">
+                    Hadir
+                  </option>
+                  <option value={2} className="text-slate-600">
+                    Mungkin
+                  </option>
+                  <option value={3} className="text-slate-600">
+                    Tidak Hadir
+                  </option>
                 </select>
               </div>
               <div className="relative grid place-content-center">
@@ -475,8 +489,8 @@ const Invitation: React.FC = () => {
               </div>
             </form>
             <div className="h-24 overflow-y-auto lg:h-32 mt-7">
-              <div className="grid grid-flow-col grid-rows-2 gap-1 origin-left">
-                <div className="row-span-3 ">
+              <div className="grid grid-flow-col grid-rows-1 gap-1 ">
+                <div className="row-span-3">
                   <svg
                     className="w-6 h-6 ml-0 lg:w-10 lg:h-10"
                     fill="none"
@@ -484,69 +498,63 @@ const Invitation: React.FC = () => {
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
                 </div>
-                <div className="col-span-2 pl-3 text-sm -translate-x-10 lg:pl-0 lg:text-lg">
+                <div className="col-span-1 text-sm -translate-x-20 lg:pl-0 lg:text-lg place-items-start">
                   <span>User 1</span>
-                </div>
-                <div className="row-span-2 pl-3 text-xs -translate-x-10 lg:pl-0 lg:text-base">
-                  <p>Semoga Samawa yaa</p>
+                  <p>Selamat yaa</p>
                 </div>
               </div>
-              <div className="grid grid-flow-col grid-rows-2 gap-1 origin-left snap-y">
-                <div className="row-span-3 ">
+              <div className="grid grid-flow-col grid-rows-1 gap-1 ">
+                <div className="row-span-3">
                   <svg
-                    className="w-6 h-6 lg:w-10 lg:h-10"
+                    className="w-6 h-6 ml-0 lg:w-10 lg:h-10"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
                 </div>
-                <div className="col-span-2 pl-3 text-sm -translate-x-10 lg:pl-0 lg:text-lg">
+                <div className="col-span-1 text-sm -translate-x-20 lg:pl-0 lg:text-lg place-items-start">
                   <span>User 2</span>
-                </div>
-                <div className="row-span-2 pl-3 text-xs -translate-x-10 lg:pl-0 lg:text-base">
-                  <p>Semoga Samawa yaa</p>
+                  <p>Selamat yaa</p>
                 </div>
               </div>
-              <div className="grid grid-flow-col grid-rows-2 gap-1 snap-y">
-                <div className="row-span-3 ">
+              <div className="grid grid-flow-col grid-rows-1 gap-1 ">
+                <div className="row-span-3">
                   <svg
-                    className="w-6 h-6 lg:w-10 lg:h-10"
+                    className="w-6 h-6 ml-0 lg:w-10 lg:h-10"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
                 </div>
-                <div className="col-span-2 pl-3 text-sm -translate-x-10 lg:pl-0 lg:text-lg">
+                <div className="col-span-1 text-sm -translate-x-20 lg:pl-0 lg:text-lg place-items-start">
                   <span>User 3</span>
-                </div>
-                <div className="row-span-2 pl-3 text-xs -translate-x-10 lg:pl-0 lg:text-base">
-                  <p>Semoga Samawa yaa</p>
+                  <p>Selamat yaa</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="relative flex flex-col overflow-hidden font-mulish -top-56 ">
+        <div className="relative flex flex-col overflow-hidden font-mulish top-7">
           <Image src={flower} className="absolute z-10 overflow-visible top-10 " layout="fill" alt="" objectFit="inherit" />
-          <div className="z-50 flex flex-col w-screen mb-5 overflow-hidden">
+          <div className="z-40 z-50 flex flex-col w-screen mb-5 overflow-hidden">
             <div className="grid p-3 px-12 text-center text-orange-200 place-items-center font-mulish">
               <span className="text-2xl lg:text-5xl lg:pt-20">Kirim Hadiah</span>
               <span
@@ -560,7 +568,7 @@ const Invitation: React.FC = () => {
               {/* Modals */}
               <button
                 type="button"
-                onClick={() => setShowModal(true)}
+                onClick={openModal}
                 id="btn"
                 className="flex px-3 text-[#251A19] lg:m-10 py-1 items-center w-fit content-center stroke-[#251A19] !mt-1 space-x-3 border-2 border-orange-200 bg-orange-200 rounded-full hover:bg-[#251A19] hover:text-orange-200 hover:font-normal font-semibold">
                 <svg
@@ -570,24 +578,35 @@ const Invitation: React.FC = () => {
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M3 19v-8.93a2 2 0 01.89-1.664l7-4.666a2 2 0 012.22 0l7 4.666A2 2 0 0121 10.07V19M3 19a2 2 0 002 2h14a2 2 0 002-2M3 19l6.75-4.5M21 19l-6.75-4.5M3 10l6.75 4.5M21 10l-6.75 4.5m0 0l-1.14.76a2 2 0 01-2.22 0l-1.14-.76"></path>
                 </svg>
                 <span className="text-xs lg:text-base">Kirim Hadiah Terbaikmu</span>
               </button>
 
               {/* Modal PopUp */}
-              {showModal ? (
-                <div>
-                  <div className="fixed inset-0 z-20 overflow-y-auto bg-gray-500 bg-opacity-40 ">
+              <Transition appear show={showModal} as={Fragment}>
+                <Dialog as="div" className="relative z-40" onClose={closeModal}>
+                  <Transition.Child
+                    as={Fragment}
+                    enter="ease-out duration-300"
+                    enterFrom="opacity-0"
+                    enterTo="opacity-100"
+                    leave="ease-in duration-200"
+                    leaveFrom="opacity-100"
+                    leaveTo="opacity-0">
+                    <div className="fixed inset-0 bg-black bg-opacity-25" />
+                  </Transition.Child>
+
+                  <div className="fixed inset-0 overflow-y-auto bg-gray-500 bg-opacity-40 ">
                     <div className="flex items-center justify-center min-h-screen px-4 text-center md:items-center">
                       <div className="fixed "></div>
                       <div className="inline-block w-full max-w-xl p-5 text-left bg-orange-200 rounded-lg shadow-xl">
-                        <div className="flex flex-col ">
+                        <div className="flex flex-col">
                           <div className="grid ml-auto mr-0 align-right place-items-stretch">
-                            <button id="btn-close" type="button" onClick={() => setShowModal(false)}>
+                            <button id="btn-close" type="button" onClick={closeModal}>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="w-8 h-8 stroke-1 stroke-slate-600"
@@ -635,14 +654,12 @@ const Invitation: React.FC = () => {
                             </svg>
                           </div>
                           <div className="flex-initial w-64 pl-5 lg:pl-16">
-                            <input disabled className="text-xl" id="copy" value="1234567890">
-                              1234567890
-                            </input>
+                            <p className="text-xl">1234567890</p>
                             <p className="text-sm">a.n mempelai wanita</p>
                           </div>
                           <div className="flex-initial w-32 pt-2 pl-5">
                             <a>
-                              <button data-clipboard-target="#copy">
+                              <button>
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   className="w-7 h-7"
@@ -712,8 +729,8 @@ const Invitation: React.FC = () => {
                       </div>
                     </div>
                   </div>
-                </div>
-              ) : null}
+                </Dialog>
+              </Transition>
 
               <span
                 className="mt-10 text-xs lg:text-base lg:px-60"
@@ -728,7 +745,7 @@ const Invitation: React.FC = () => {
                 Q.S. Ar Rum : 21
               </p>
             </div>
-            <div className="grid text-center place-items-center font-mulish">
+            <div className="grid -mt-5 text-center place-items-center font-mulish">
               <span className="text-2xl text-orange-200 mt-9 lg:text-5xl lg:mt-20">Gallery</span>
               <div className="grid grid-flow-col grid-cols-2 gap-4 py-4 mt-1 lg:gap-16 ">
                 <div>
@@ -795,7 +812,7 @@ const Invitation: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="relative flex flex-col items-center mt-0 bg-black bg-opacity-50 bg-top bg-no-repeat bg-cover wedding2 bg-blend-darken -top-56">
+        <div className="relative flex flex-col items-center mt-0 bg-black bg-opacity-50 bg-top bg-no-repeat bg-cover wedding2 bg-blend-darken">
           <div className="z-20 justify-center place-content-center lg:w-auto lg:h-screen lg:pt-72">
             <p
               className="mt-16 space-y-1 text-2xl text-center text-orange-200 lg:text-4xl"
@@ -858,10 +875,10 @@ const Invitation: React.FC = () => {
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              stroke-width="2">
+              strokeWidth="2">
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
               />
             </svg>

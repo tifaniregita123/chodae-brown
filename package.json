@@ -30,7 +30,7 @@
     "@emotion/react": "^11.9.0",
     "@emotion/server": "^11.4.0",
     "@emotion/styled": "^11.8.1",
-    "@headlessui/react": "^1.5.0",
+    "@headlessui/react": "^1.6.6",
     "aos": "^2.3.4",
     "axios": "^0.26.1",
     "clipboard": "^2.0.11",
