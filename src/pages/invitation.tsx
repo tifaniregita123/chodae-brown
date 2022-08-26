@@ -15,6 +15,7 @@ const Invitation: React.FC = () => {
   function openModal() {
     setShowModal(true)
   }
+
   return (
     <>
       <div className="left-0 right-0 choco">
@@ -77,9 +78,9 @@ const Invitation: React.FC = () => {
               <div className="bg-orange-200 rounded-t-full w-36 h-52 lg:w-80 lg:h-96"> </div>
             </div>
 
-            <p className="mx-5 mb-3 text-xl text-center text-orange-200 border-b-2 border-orange-200 lg:mx-96 lg:pb-5 lg:text-4xl my-7">
+            <h1 className="mx-5 mb-3 text-xl text-center text-orange-200 border-b-2 border-orange-200 lg:mx-96 lg:pb-5 lg:text-4xl my-7">
               Mempelai Wanita, S.Pd
-            </p>
+            </h1>
             <p
               className="text-xs text-center text-orange-200 lg:mt-10 lg:text-lg"
               data-aos="fade-right"
@@ -128,9 +129,9 @@ const Invitation: React.FC = () => {
               <div className="text-orange-200 bg-orange-200 rounded-t-full w-36 h-52 lg:w-80 lg:h-96"> </div>
             </div>
 
-            <p className="mx-5 my-10 mb-3 text-xl text-center text-orange-200 border-b-2 border-orange-200 lg:mx-96 lg:pb-5 lg:text-4xl">
+            <h1 className="mx-5 my-10 mb-3 text-xl text-center text-orange-200 border-b-2 border-orange-200 lg:mx-96 lg:pb-5 lg:text-4xl">
               Mempelai Pria, S.Pd
-            </p>
+            </h1>
             <p
               className="text-xs text-center text-orange-200 lg:mt-10 lg:text-lg"
               data-aos="fade-right"
@@ -250,7 +251,7 @@ const Invitation: React.FC = () => {
                   <circle cx="12" cy="12" r="9" />
                 </svg>
               </div>
-              <span className="m-4 text-2xl lg:text-5xl lg:m-9">Akad</span>
+              <h1 className="m-4 text-2xl lg:text-5xl lg:m-9">Akad</h1>
               <span
                 className="mb-4 text-base lg:text-xl"
                 data-aos="fade-left"
@@ -309,7 +310,7 @@ const Invitation: React.FC = () => {
                     clipRule="evenodd"></path>
                 </svg>
               </div>
-              <span className="m-4 text-2xl lg:text-5xl lg:m-9">Resepsi</span>
+              <h1 className="m-4 text-2xl lg:text-5xl lg:m-9">Resepsi</h1>
               <span
                 className="mb-4 text-base lg:text-xl"
                 data-aos="fade-left"
@@ -356,13 +357,13 @@ const Invitation: React.FC = () => {
           </div>
         </div>
         <div className="grid -mt-32 text-center text-orange-200 place-items-center p-7">
-          <span
+          <h1
             className="m-4 text-2xl lg:text-4xl lg:pt-20"
             data-aos="slide-down"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="500">
             Live Streaming
-          </span>
+          </h1>
           <span
             className="mb-4 text-xs lg:text-lg lg:p-10"
             data-aos="fade"
@@ -390,8 +391,8 @@ const Invitation: React.FC = () => {
           </a>
         </div>
         <div className="relative flex flex-col -mt-20 overflow-hidden">
-          <div className="z-50 grid text-center text-orange-200 p-7">
-            <span className="mt-16 mb-4 text-2xl lg:text-4xl">Love Story</span>
+          <div className="z-50 grid p-12 text-center text-orange-200">
+            <h1 className="mt-16 mb-4 text-2xl lg:text-4xl">Love Story</h1>
             <span
               className="mb-4 text-xs lg:text-lg lg:pt-7"
               data-aos="fade"
@@ -445,7 +446,7 @@ const Invitation: React.FC = () => {
         </div>
         {/* Card Ucapan */}
         <div className="grid text-center text-orange-200 -mt-14 place-items-center p-7">
-          <span className="mt-16 mb-4 text-2xl lg:text-5xl lg:mt-32">Ucapan & Do'a</span>
+          <h1 className="mt-16 mb-4 text-2xl lg:text-5xl lg:mt-32">Ucapan & Do'a</h1>
           <span className="mb-4 text-xs lg:text-lg lg:py-10">Kirimkan do’a & ucapan kepada kedua mempelai</span>
         </div>
         <div tw="mx-7 justify-center" data-aos="fade" data-aos-easing="ease-out-cubic" data-aos-duration="800">
@@ -556,7 +557,7 @@ const Invitation: React.FC = () => {
           <Image src={flower} className="absolute z-10 overflow-visible top-10 " layout="fill" alt="" objectFit="inherit" />
           <div className="z-40 z-50 flex flex-col w-screen mb-5 overflow-hidden">
             <div className="grid p-3 px-12 text-center text-orange-200 place-items-center font-mulish">
-              <span className="text-2xl lg:text-5xl lg:pt-20">Kirim Hadiah</span>
+              <h1 className="text-2xl lg:text-5xl lg:pt-20">Kirim Hadiah</h1>
               <span
                 className="mt-4 mb-4 text-xs lg:text-lg lg:m-10"
                 data-aos="fade"
@@ -653,6 +654,7 @@ const Invitation: React.FC = () => {
                               </defs>
                             </svg>
                           </div>
+
                           <div className="flex-initial w-64 pl-5 lg:pl-16">
                             <p className="text-xl">1234567890</p>
                             <p className="text-sm">a.n mempelai wanita</p>
@@ -746,7 +748,7 @@ const Invitation: React.FC = () => {
               </p>
             </div>
             <div className="grid -mt-5 text-center place-items-center font-mulish">
-              <span className="text-2xl text-orange-200 mt-9 lg:text-5xl lg:mt-20">Gallery</span>
+              <h1 className="text-2xl text-orange-200 mt-9 lg:text-5xl lg:mt-20">Gallery</h1>
               <div className="grid grid-flow-col grid-cols-2 gap-4 py-4 mt-1 lg:gap-16 ">
                 <div>
                   <div
@@ -832,18 +834,18 @@ const Invitation: React.FC = () => {
               className="pt-5 mb-16 space-y-1 text-2xl text-center text-orange-200 lg:text-4xl"
               data-aos="slide-left"
               data-aos-easing="linear"
-              data-aos-duration="2000">
+              data-aos-duration="1000">
               20 Juli 2022
             </p>
           </div>
         </div>
 
         <div
-          className="relative grid justify-center place-content-center"
+          className="relative grid justify-center pt-10 place-content-center "
           data-aos="fade"
           data-aos-easing="linear"
           data-aos-duration="500">
-          <p className="mb-8 text-sm text-center text-slate-200">CREATED WITH LOVE BY</p>
+          <p className="mb-6 text-sm text-center text-slate-200">CREATED WITH LOVE BY</p>
           <span className="h-auto w-44">
             <Image src={logo} className="absolute w-auto mx-auto overflow-visible p-auto h-44" alt="" />
           </span>

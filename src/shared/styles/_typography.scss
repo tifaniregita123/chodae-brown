@@ -1,10 +1,20 @@
 // DEFINE YOUR OWN FONT FROM ./fonts HERE
 // EXAMPLE:
-// @font-face {
-//   font-family: Helvetica;
-//   src: url('../fonts/Helvetica/Helvetica-Light.otf');
-//   font-weight: 300;
-// }
+@font-face {
+  font-family: 'geraldine';
+  src: url('../fonts/Geraldine/geraldine-demo-ver-regular-webfont.woff2') format('woff2'),
+    url('../fonts/Geraldine/geraldine-demo-ver-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'louis';
+  src: url('../fonts/LouisGeorgeCafe/louis_george_cafe-webfont.woff2') format('woff2'),
+    url('../fonts/LouisGeorgeCafe/louis_george_cafe-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 // h1,
 // h2,
