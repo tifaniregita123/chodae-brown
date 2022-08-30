@@ -19,13 +19,13 @@ const LandingPage: React.FC = () => {
             data-aos-duration="1000">
             Kepada
           </p>
-          <p
+          <h1
             className="py-2 text-3xl text-center text-orange-200 lg:text-5xl"
             data-aos="fade-right"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="1000">
             Nama Tamu
-          </p>
+          </h1>
           <span className="flex flex-wrap pb-40 place-content-center">
             <Link href="/invitation">
               <a data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000">

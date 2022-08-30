@@ -18,7 +18,7 @@ const Invitation: React.FC = () => {
 
   return (
     <>
-      <div className="left-0 right-0 choco">
+      <div className="left-0 right-0 overflow-y-hidden choco ">
         <div className="relative flex flex-col items-center pt-64 my-auto mt-0 bg-black bg-opacity-50 bg-center bg-cover md:flex wedding bg-blend-darken">
           <div className="justify-center max-w-lg sm:text-left place-content-center">
             <p
@@ -410,7 +410,7 @@ const Invitation: React.FC = () => {
               data-aos-duration="1000">
               <span className="mt-8 text-xs text-center lg:text-lg lg:m-20">Gambar</span>
               <div className="grid object-left">
-                <span className="mt-8 text-base text-left lg:text-xl">First Meet</span>
+                <h1 className="mt-8 text-base text-left lg:text-xl">First Meet</h1>
                 <span className="text-xs lg:text-lg">
                   Marriage is the golden ring in a chain whose beginning is a glance and whose ending is eternity
                 </span>
@@ -423,7 +423,7 @@ const Invitation: React.FC = () => {
               data-aos-duration="1000">
               <span className="mt-8 text-xs text-center lg:text-lg lg:m-20">Gambar</span>
               <div className="grid object-left">
-                <span className="mt-8 text-base text-left lg:text-xl">Relationship</span>
+                <h1 className="mt-8 text-base text-left lg:text-xl">Relationship</h1>
                 <span className="text-xs lg:text-lg">
                   Marriage is the golden ring in a chain whose beginning is a glance and whose ending is eternity
                 </span>
@@ -436,7 +436,7 @@ const Invitation: React.FC = () => {
               data-aos-duration="1000">
               <span className="mt-8 text-xs text-center lg:text-lg lg:m-20">Gambar</span>
               <div className="grid object-left">
-                <span className="mt-8 text-base text-left lg:text-xl">Engangement</span>
+                <h1 className="mt-8 text-base text-left lg:text-xl">Engangement</h1>
                 <span className="text-xs lg:text-lg">
                   Marriage is the golden ring in a chain whose beginning is a glance and whose ending is eternity
                 </span>
